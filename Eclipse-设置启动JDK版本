@@ -1,0 +1,11 @@
+问题出现：出于对JDK9新特性的好奇，安装了JDK9 到我的电脑。在重启Eclipse时出现错误不能启动了---查看日志是JDK的问题
+
+解决方案：修改为原来的JDK 用于Eclipse 的启动
+
+问题回溯：Eclipse是由java开发，所以在启动过程需要JDK的支持。
+
+如何修改：
+
+打开eclipse安装目录下的eclipse.ini文件，加入虚拟机参数（JDK参数）
+-vm
+指向具体的JDK 安装的bin目录（比如：D:\java\jdk8\bin）
